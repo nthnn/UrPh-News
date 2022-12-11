@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewsWebViewActivity">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight=".60"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/news_webview_title"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/news_webview_url"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/close_webview_btn"
+            android:src="@drawable/btn_close"
+            android:padding="6dp"
+            android:background="@drawable/close_btn_shape"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="7dp"
+            android:layout_width="0dp"
+            android:layout_weight=".05"
+            android:layout_height="25dp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/webview_load_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="100"
+        android:visibility="gone"
+        android:indeterminate="false"
+        android:padding="0dp"
+        android:layout_marginTop="-7dp"
+        android:layout_marginBottom="-7dp"
+        style="?android:attr/progressBarStyleHorizontal" />
+
+    <org.adblockplus.libadblockplus.android.webview.AdblockWebView
+        android:id="@+id/adbp_webview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

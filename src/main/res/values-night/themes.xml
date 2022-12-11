@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.UrPhNews" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryVariant">#2196F3</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondary">#0E8EEF</item>
+        <item name="colorSecondaryVariant">#1050AE</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="fontFamily">@font/titillium</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>
